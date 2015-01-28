@@ -2,43 +2,11 @@
 
 from CoffeeEvent import CoffeeEvent
 from CoffeeHistory import CoffeeHistory
+from CoffeeUtil import seconds_nice, dates_from_to, weeks_from_to, calcstats
 from datetime import timedelta
-from math import sqrt
 from string import Template
 import json
 import sys
-
-# yield all dates from start to end
-def dates_from_to(start, end):
-    now = start
-    while now <= end:
-        yield now;
-        now += timedelta(days=1);
-
-# yield all week numbers from start to end
-def weeks_from_to(start, end):
-    now = start
-    while now <= end:
-        yield int(now.strftime('%W'))
-        now += timedelta(days=7);
-
-# present seconds in a human readable form
-def seconds_nice(total_seconds):
-    minutes, seconds = divmod(total_seconds, 60)
-    return '%dm%02ds' % (minutes, seconds)
-
-# calculate statistics on numbers in a list
-def calcstats(list):
-    n = len(list)
-    avg = sum(list) / n
-    pop_var = sum([(s-avg)**2 for s in list])/n
-    return {
-        "min": min(list),
-        "max": max(list),
-        "avg": avg,
-        "n": n,
-        "stddev": sqrt(pop_var)
-    }
 
 # capture file names to process, skipping file names starting with "--"
 files_to_process = [x for x in sys.argv[1:] if not x.startswith("--")]
@@ -57,7 +25,7 @@ for filename in files_to_process:
   all_events = json.loads("".join(all_lines[1:]));
 
   for event in all_events:
-      history.consider(CoffeeEvent(event["id"], event["created_at"], event["text"]))
+      history.consider(CoffeeEvent(event))
 
 
 # start the report
@@ -75,14 +43,14 @@ if show_all_events:
 i = 1
 for date in dates_from_to(summary["earliest"], summary["latest"]):
    event = history.retrieve_for_date(date)
-   if event == None: continue
+
+   if event == None:
+       if show_all_events:
+           print '%-3s %-9s %s' % ("", date.strftime('%A'), date)
+       continue
+
    if show_all_events:
-       print '%(i)-3d %(day)-9s %(date)s %(measurement)-7s %(bar)s' % { "i": i,
-             "date":date,
-             "day": date.strftime('%A'),
-             "measurement": seconds_nice(event.measurement().seconds),
-             "bar": "*" * (event.measurement().seconds/20)
-           }
+       print '%-3d %s' % (i, event.as_oneline_with_bar())
 
    day = event.posted_date().isoweekday()
    week = int(event.posted_date().strftime('%W'))
@@ -104,6 +72,18 @@ print '%s measurements from %s to %s, with average %s and stddev %s' % (
     seconds_nice(overall_stats["avg"]),
     seconds_nice(overall_stats["stddev"])
 )
+
+print
+print "Fastest:"
+print
+for event in history.fastest(5):
+   print "*", event.as_oneline_with_link()
+
+print
+print "Slowest:"
+print
+for event in history.slowest(5):
+   print "*", event.as_oneline_with_link()
 
 print
 print "Weeks"

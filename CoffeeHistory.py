@@ -22,6 +22,15 @@ class CoffeeHistory:
                 latest = e.posted_datetime()
         return latest
 
+    def fastest(self, n):
+        return self.ordered()[:n]
+
+    def slowest(self, n):
+        return self.ordered()[-n:]
+
+    def ordered(self):
+        return sorted(self.events_by_date.values(), key = lambda e: e.measurement_seconds())
+
     def summary(self):
         return {
             "earliest": self.earliest().date(),

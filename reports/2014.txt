@@ -19,12 +19,15 @@ All events
 16  Tuesday   2014-08-26 12m34s  *************************************
 17  Wednesday 2014-08-27 9m07s   ***************************
 18  Thursday  2014-08-28 7m55s   ***********************
+    Friday    2014-08-29
+    Monday    2014-09-01
 19  Tuesday   2014-09-02 17m39s  ****************************************************
 20  Wednesday 2014-09-03 7m58s   ***********************
 21  Thursday  2014-09-04 7m34s   **********************
 22  Friday    2014-09-05 8m43s   **************************
 23  Monday    2014-09-08 6m31s   *******************
 24  Tuesday   2014-09-09 7m17s   *********************
+    Wednesday 2014-09-10
 25  Thursday  2014-09-11 8m36s   *************************
 26  Friday    2014-09-12 7m51s   ***********************
 27  Monday    2014-09-15 7m31s   **********************
@@ -33,6 +36,8 @@ All events
 30  Thursday  2014-09-18 14m00s  ******************************************
 31  Friday    2014-09-19 8m31s   *************************
 32  Monday    2014-09-22 2m43s   ********
+    Tuesday   2014-09-23
+    Wednesday 2014-09-24
 33  Thursday  2014-09-25 10m55s  ********************************
 34  Friday    2014-09-26 8m49s   **************************
 35  Monday    2014-09-29 6m51s   ********************
@@ -44,20 +49,31 @@ All events
 41  Tuesday   2014-10-07 8m09s   ************************
 42  Wednesday 2014-10-08 8m07s   ************************
 43  Thursday  2014-10-09 6m58s   ********************
+    Friday    2014-10-10
+    Monday    2014-10-13
+    Tuesday   2014-10-14
+    Wednesday 2014-10-15
+    Thursday  2014-10-16
+    Friday    2014-10-17
+    Monday    2014-10-20
 44  Tuesday   2014-10-21 6m51s   ********************
 45  Wednesday 2014-10-22 8m33s   *************************
 46  Thursday  2014-10-23 8m50s   **************************
 47  Friday    2014-10-24 7m57s   ***********************
 48  Monday    2014-10-27 6m52s   ********************
+    Tuesday   2014-10-28
 49  Wednesday 2014-10-29 7m53s   ***********************
 50  Thursday  2014-10-30 7m25s   **********************
 51  Friday    2014-10-31 7m43s   ***********************
 52  Monday    2014-11-03 6m41s   ********************
 53  Tuesday   2014-11-04 8m09s   ************************
 54  Wednesday 2014-11-05 10m14s  ******************************
+    Thursday  2014-11-06
 55  Friday    2014-11-07 8m00s   ************************
 56  Monday    2014-11-10 9m20s   ****************************
 57  Tuesday   2014-11-11 7m08s   *********************
+    Wednesday 2014-11-12
+    Thursday  2014-11-13
 58  Friday    2014-11-14 8m23s   *************************
 59  Monday    2014-11-17 7m18s   *********************
 60  Tuesday   2014-11-18 9m55s   *****************************
@@ -65,14 +81,18 @@ All events
 62  Thursday  2014-11-20 8m53s   **************************
 63  Friday    2014-11-21 8m09s   ************************
 64  Monday    2014-11-24 8m03s   ************************
+    Tuesday   2014-11-25
 65  Wednesday 2014-11-26 7m29s   **********************
+    Thursday  2014-11-27
 66  Friday    2014-11-28 5m43s   *****************
 67  Monday    2014-12-01 8m01s   ************************
 68  Tuesday   2014-12-02 6m51s   ********************
 69  Wednesday 2014-12-03 10m06s  ******************************
 70  Thursday  2014-12-04 8m25s   *************************
+    Friday    2014-12-05
 71  Monday    2014-12-08 7m29s   **********************
 72  Tuesday   2014-12-09 11m43s  ***********************************
+    Wednesday 2014-12-10
 73  Thursday  2014-12-11 7m06s   *********************
 74  Friday    2014-12-12 10m10s  ******************************
 75  Monday    2014-12-15 7m33s   **********************
@@ -80,6 +100,11 @@ All events
 77  Wednesday 2014-12-17 6m45s   ********************
 78  Thursday  2014-12-18 10m50s  ********************************
 79  Friday    2014-12-19 7m12s   *********************
+    Monday    2014-12-22
+    Tuesday   2014-12-23
+    Wednesday 2014-12-24
+    Thursday  2014-12-25
+    Friday    2014-12-26
 80  Monday    2014-12-29 10m56s  ********************************
 81  Tuesday   2014-12-30 8m08s   ************************
 82  Wednesday 2014-12-31 8m31s   *************************
@@ -87,6 +112,22 @@ All events
 Overall
 --------------------
 82 measurements from 2m43s to 17m39s, with average 8m24s and stddev 1m56s
+
+Fastest:
+
+* Monday    2014-09-22 2m43s   My time is 2:43.97 but it doesn't count. 4... https://twitter.com/913coffee/status/514224295740846080
+* Friday    2014-08-08 5m36s   Grind to cup, my time at home is 5:36.10. ... https://twitter.com/913coffee/status/497768105938919424
+* Friday    2014-11-28 5m43s   My time is 5:43.01. Holepunch guy was read... https://twitter.com/913coffee/status/538383808009998336
+* Wednesday 2014-10-01 6m24s   My time is 6:24.53.                           https://twitter.com/913coffee/status/517350565815136257
+* Wednesday 2014-08-06 6m25s   My time is 6:25.82. Improving, and more pe... https://twitter.com/913coffee/status/497054852925894656
+
+Slowest:
+
+* Tuesday   2014-12-09 11m43s  My time is 11:43.22 but it was with the wait! https://twitter.com/913coffee/status/542501064256131073
+* Tuesday   2014-08-26 12m34s  My time is 12:34.59. That's a record. Also... https://twitter.com/913coffee/status/504306936800489472
+* Tuesday   2014-09-16 12m47s  My time is 12:47.53. Lots of people today,... https://twitter.com/913coffee/status/512039844915060736
+* Thursday  2014-09-18 14m00s  My time is 14:00.57. #longline #hdcoffee? ... https://twitter.com/913coffee/status/512730466772713472
+* Tuesday   2014-09-02 17m39s  My time is 17:39.68. But not really. Dayol... https://twitter.com/913coffee/status/506842219630718977
 
 Weeks
 --------------------
