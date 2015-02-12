@@ -1,0 +1,86 @@
+
+All events
+--------------------
+
+Week 0
+    Event 1   Friday    2015-01-02 9m57s   *****************************
+
+Week 1
+    Event 2   Monday    2015-01-05 9m38s   ****************************
+    Event 3   Tuesday   2015-01-06 8m12s   ************************
+              Wednesday 2015-01-07
+    Event 4   Thursday  2015-01-08 7m58s   ***********************
+    Event 5   Friday    2015-01-09 7m15s   *********************
+
+Week 2
+              Monday    2015-01-12
+    Event 6   Tuesday   2015-01-13 8m11s   ************************
+              Wednesday 2015-01-14
+    Event 7   Thursday  2015-01-15 8m33s   *************************
+    Event 8   Friday    2015-01-16 13m30s  ****************************************
+
+Week 3
+              Monday    2015-01-19
+    Event 9   Tuesday   2015-01-20 5m45s   *****************
+    Event 10  Wednesday 2015-01-21 7m59s   ***********************
+    Event 11  Thursday  2015-01-22 4m03s   ************
+    Event 12  Friday    2015-01-23 6m01s   ******************
+
+Week 4
+    Event 13  Monday    2015-01-26 6m47s   ********************
+    Event 14  Tuesday   2015-01-27 5m59s   *****************
+              Wednesday 2015-01-28
+              Thursday  2015-01-29
+    Event 15  Friday    2015-01-30 6m58s   ********************
+
+Week 5
+              Monday    2015-02-02
+    Event 16  Tuesday   2015-02-03 7m16s   *********************
+              Wednesday 2015-02-04
+    Event 17  Thursday  2015-02-05 6m06s   ******************
+    Event 18  Friday    2015-02-06 4m31s   *************
+
+Week 6
+    Event 19  Monday    2015-02-09 8m00s   ************************
+    Event 20  Tuesday   2015-02-10 6m16s   ******************
+    Event 21  Wednesday 2015-02-11 8m07s   ************************
+
+Overall
+--------------------
+21 measurements from 4m03s to 13m30s, with average 7m28s and stddev 1m58s
+
+Fastest:
+
+* Thursday  2015-01-22 4m03s   My time is 4:03.46. Better stronger faster... https://twitter.com/913coffee/status/558488511805128704
+* Friday    2015-02-06 4m31s   My time is 4:31.05. Early run, fast time. ... https://twitter.com/913coffee/status/563745927153057793
+* Tuesday   2015-01-20 5m45s   My time is 5:45.36. Now with less pepper s... https://twitter.com/913coffee/status/557739798602199041
+* Tuesday   2015-01-27 5m59s   My time is 5:59.65                            https://twitter.com/913coffee/status/560149986034212865
+* Friday    2015-01-23 6m01s   My time is 6:01.90.                           https://twitter.com/913coffee/status/558807048880521216
+
+Slowest:
+
+* Tuesday   2015-01-06 8m12s   My time is 8:12.27.                           https://twitter.com/913coffee/status/552661036638031872
+* Thursday  2015-01-15 8m33s   My time is 8:33.13                            https://twitter.com/913coffee/status/555633236777263104
+* Monday    2015-01-05 9m38s   My time is 9:38.65.                           https://twitter.com/913coffee/status/552323834150670337
+* Friday    2015-01-02 9m57s   My time is 9:57.37.                           https://twitter.com/913coffee/status/551262009912594432
+* Friday    2015-01-16 13m30s  My time is 13:30.44.                          https://twitter.com/913coffee/status/556226899173580801
+
+Weeks
+--------------------
+Week 0 had 1 measurements, from  9m57s to  9m57s, with average  9m57s *****************************
+Week 1 had 4 measurements, from  7m15s to  9m38s, with average  8m15s ************************
+Week 2 had 3 measurements, from  8m11s to 13m30s, with average 10m04s ******************************
+Week 3 had 4 measurements, from  4m03s to  7m59s, with average  5m57s *****************
+Week 4 had 3 measurements, from  5m59s to  6m58s, with average  6m34s *******************
+Week 5 had 3 measurements, from  4m31s to  7m16s, with average  5m57s *****************
+Week 6 had 3 measurements, from  6m16s to  8m07s, with average  7m27s **********************
+
+For the 7 weeks with measurements, there are 3.0 measurements per week on average
+
+Weekdays
+--------------------
+Mondays    had 3 measurements from 6m47s to 9m38s, with average 8m08s and stddev 1m10s
+Tuesdays   had 6 measurements from 5m45s to 8m12s, with average 6m56s and stddev 1m00s
+Wednesdays had 2 measurements from 7m59s to 8m07s, with average 8m03s and stddev 0m04s
+Thursdays  had 4 measurements from 4m03s to 8m33s, with average 6m40s and stddev 1m45s
+Fridays    had 6 measurements from 4m31s to 13m30s, with average 8m02s and stddev 2m56s

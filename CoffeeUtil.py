@@ -22,6 +22,15 @@ def dates_from_to(start, end, skipweekends=True):
 
 # yield all week numbers from start to end
 def weeks_from_to(start, end):
+    # rewind start to the previous monday but only if the new start date has
+    # a week number before the initial start date
+    newstart = start - timedelta(start.weekday())
+    if newstart.strftime('%W') < start.strftime('%W'):
+        start = newstart
+
+    # fast forward end to the next sunday
+    end += timedelta(6 - end.weekday())
+
     now = start
     while now <= end:
         yield int(now.strftime('%W'))

@@ -40,17 +40,27 @@ if show_all_events:
     print "All events"
     print "-"*20
 
+curr_week_num = None
 i = 1
 for date in dates_from_to(summary["earliest"], summary["latest"]):
    event = history.retrieve_for_date(date)
 
+   if show_all_events:
+       event_week_num = date.strftime('%W')
+       if curr_week_num is None or event_week_num != curr_week_num:
+           print
+           print "Week", int(event_week_num)
+           curr_week_num = event_week_num
+
+   # no event for this date?
    if event == None:
        if show_all_events:
-           print '%-3s %-9s %s' % ("", date.strftime('%A'), date)
+           print '          %-3s %-9s %s' % ("", date.strftime('%A'), date)
        continue
 
    if show_all_events:
-       print '%-3d %s' % (i, event.as_oneline_with_bar())
+       print '    Event %-3d %s' % (i, event.as_oneline_with_bar())
+
 
    day = event.posted_date().isoweekday()
    week = int(event.posted_date().strftime('%W'))
@@ -88,6 +98,8 @@ for event in history.slowest(5):
 print
 print "Weeks"
 print "-"*20
+measurements = 0
+weeks_with_measurements = 0
 for week in weeks_from_to(summary["earliest"], summary["latest"]):
     if week not in list_of_seconds_for_week.keys():
         print 'Week %s had 0 measurements.' % (week)
@@ -99,6 +111,15 @@ for week in weeks_from_to(summary["earliest"], summary["latest"]):
          seconds_nice(stats["max"]),
          seconds_nice(stats["avg"]),
          "*" * (stats["avg"]/20))
+    measurements += stats["n"]
+    weeks_with_measurements += 1
+
+if weeks_with_measurements > 0:
+   print
+   print 'For the %d weeks with measurements, there are %.1f measurements per week on average' % (
+       weeks_with_measurements,
+       measurements/float(weeks_with_measurements)
+   )
 
 print
 print "Weekdays"
